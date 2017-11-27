@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Table(name = "chat_user")
@@ -31,4 +32,8 @@ public class User {
     private List<Chat> chats;
 
     private String email;
+
+    private UUID uuid;
+
+    private String status;
 }
