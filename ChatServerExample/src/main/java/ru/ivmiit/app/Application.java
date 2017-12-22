@@ -8,13 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-/**
- * 14.10.2017
- * Application
- *
- * @author Sidikov Marsel (First Software Engineering Platform)
- * @version v1.0
- */
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 @ComponentScan("ru.ivmiit")
 @EnableJpaRepositories(basePackages = "ru.ivmiit.repositories")
